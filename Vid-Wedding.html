@@ -6,45 +6,39 @@
   <title>Senada Pictures</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="src/output.css">
-  <link rel="icon" href="IMG/Logo/Vector Logo BLACK.png">
+  <link rel="icon" href="IMG/Logo/Carbeat Vector Logo Black.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
 <!--Navbar Begin-->
-<nav>
-<div class="h-12 flex items-center px-0.5">
+<nav id="navbar" class="fixed flex w-full z-50 shadow-md bg-white justify-between p-3 transitiion-all duration-300">
+  <div class="h-12 flex items-center px-1">
     <a href="index.html" id="topBarLogo">
-    <img src="IMG/Logo/SENADA Resize.png" alt="Logo" class="h-24 py-1 object-contain">
+      <img src="IMG/Logo/Carbeat Logo (Black).png" alt="Logo" class="h-12 py-1 object-contain">
     </a>
-</div>
+  </div>
 
 <div class="menu-container">
-    <div class="dropdown">
-    <button class="dropdown-toggle" onclick="toggleDropdown('photoDropdown', this)">
-        Photography <span class="arrow">▼</span>
-    </button>
-    <div id="photoDropdown" class="dropdown-content">
-        <a href="Pre-Wedding.html">Pre Wedding</a>
-        <a href="Wedding.html">Wedding</a>
-        <!-- <a href="#">Product</a>
-        <a href="#">Food</a> -->
-    </div>
-    </div>
+<div class="dropdown hidden w-full md:block md:w-auto">
+  <button class="dropdown-toggle" onclick="toggleDropdown('photoDropdown', this)">Photography <span class="arrow">▼</span>
+  </button>
+  <div id="photoDropdown" class="dropdown-content">
+    <a href="Pre-Wedding.html">Pre Wedding</a>
+    <a href="Wedding.html">Wedding</a>
+  </div>
+</div>
 
-    <div class="dropdown">
-    <button class="dropdown-toggle" onclick="toggleDropdown('videoDropdown', this)">
-        Videography <span class="arrow">▼</span>
-    </button>
-    <div id="videoDropdown" class="dropdown-content">
-        <a href="Wedding.html">Wedding</a>
-        <!-- <a href="#">Commercial</a>
-        <a href="#">Event</a> -->
-    </div>
-    </div>
+<div class="dropdown hidden w-full md:block md:w-auto">
+  <button class="dropdown-toggle" onclick="toggleDropdown('videoDropdown', this)">Videography <span class="arrow">▼</span>
+  </button>
+  <div id="videoDropdown" class="dropdown-content">
+    <a href="Wedding.html">Wedding</a>
+  </div>
 </div>
-    <div id="hamburgerButton" class="hamburger" onclick="toggleMenu()">☰</div>
 </div>
+    <div id="hamburgerButton" class="hamburger md:block" onclick="toggleMenu()">☰</div>
+  </div>
 </nav>
 <!-- Navbar End -->
 
@@ -141,17 +135,17 @@
 <!--Footer Begin-->
 <footer class="bg-white border-t border-dashed border-gray-400 mt-10">
   <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-start gap-8">
-
+    
     <div>
       <a href="#">
-        <img src="IMG/Logo/NEW SENADA PICTURES LOGO.png" alt="Senada Pictures" class="h-20 mb-2">
+        <img src="IMG/Logo/Carbeat Logo (Black).png" alt="Carbeat Pictures" class="h-10 mb-2">
       </a>
     </div>
     
     <div class="text-sm/5 text-gray-600">
       <p class="text-xs mb-1">by appointment only</p>
       <p class="text-xs mb-1"><a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=kiyrandom@gmail.com&tf=1" target="_blank" class="text-gray-800">wongirengjembuten365@gmail.com</a></p>
-      <p class="text-xs mb-1">Jl. Uluwatu II No.54, Jimbaran, Kec. Kuta Sel., Kabupaten Badung</p>
+      <p class="text-xs mb-1">Kampus Bukit, Jimbaran, South Kuta, Badung Regency</p>
       <p class="text-xs mb-1">Bali 80361, Indonesia</p>
     </div>
 
@@ -164,7 +158,7 @@
   </div>
 
   <div class="text-center text-xs text-gray-500 pb-6">
-    &copy; Senada Pictures 2025
+    &copy; Carbeat Pictures 2025
   </div>
 </footer>
 <!--Footer End-->

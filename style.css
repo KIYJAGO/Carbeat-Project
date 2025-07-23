@@ -231,22 +231,15 @@ nav {
 }
 
 /*Main (Text)*/
-/* .gallery-container h2 {
-  margin-bottom: 10px;
-  font-size: 18px;
+.btn-close {
+  padding: 6px 10px;
+  border: 1px solid black;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-.hover-underline {
-  display: inline-block;
-  border-bottom: 2px solid black;
-  transition: border-bottom-width 0.2s;
+.btn-close:hover{
+  color: red;
 }
-
-.hover-underline:hover {
-  border-bottom-width: 4px;
-}
-
-.centered-title {
-  display: flex;
-  padding: 25px 20px 5px 120px;
-} */
