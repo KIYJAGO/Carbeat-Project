@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbeat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="icon" href="IMG/Logo/Carbeat Vector Logo Black.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+<!--Navbar Begin-->
+    <nav id="navbar" class="fixed flex w-full z-50 shadow-md bg-white justify-between p-3 transitiion-all duration-300">
+    <div class="h-12 flex items-center px-1">
+        <a href="#" id="topBarLogo">
+        <img src="IMG/Logo/Carbeat Logo (Black).png" alt="Logo" class="h-12 py-1 object-contain">
+        </a>
+    </div>
+
+    <div class="menu-container">
+        <div class="dropdown hidden w-full md:block md:w-auto">
+            <button class="dropdown-toggle" onclick="toggleDropdown('photoDropdown', this)">Photography <span class="arrow">▼</span></button>
+            <div id="photoDropdown" class="dropdown-content">
+                <a href="Pre-Wedding.html">Pre Wedding</a>
+                <a href="Wedding.html">Wedding</a>
+            </div>
+        </div>
+
+        <div class="dropdown hidden w-full md:block md:w-auto">
+            <button class="dropdown-toggle" onclick="toggleDropdown('videoDropdown', this)">Videography <span class="arrow">▼</span></button>
+            <div id="videoDropdown" class="dropdown-content">
+                <a href="Wedding.html">Wedding</a>
+            </div>
+        </div>
+    </div>
+        <div id="hamburgerButton" class="hamburger md:block" onclick="toggleMenu()">☰</div>
+    </div>
+    </nav>
+<!-- Navbar End -->
+
+<!-- Side Menu Begin -->
+    <div class="side-menu" id="sideMenu">
+        <div class="top">
+            <div class="nav-logo" id="sideBarLogo">
+            <button class="btn-close font-bold cursor-pointer">X</button>
+            </div>
+            <a href="Photography.html">Photography</a>
+            <a href="Videography.html">Videography</a>
+            <a href="About.html">About</a>
+            <a href="Service.html">Service</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+        <div class="bottom">
+            <div class="contact-item">
+                <a href="https://wa.me/+6285339047862" target="_blank" class="icon"><i class="fa-brands fa-whatsapp"></i><span>+628123456789</span></a>
+            </div>
+            <div class="contact-item">
+                <a href="https://www.instagram.com/cabeatpictures?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i><span>@carbeat</span></a>
+            </div>
+            <div class="contact-item">
+                <a href="https://maps.app.goo.gl/pJCjfqzjXT8QCr5k9" target="_blank" class="icon"><i class="fa-solid fa-location-dot"></i><span>Jl. Apa Aja Lah No.24</span></a>
+            </div>
+            <div class="contact-item">
+                <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=kiyrandom@gmail.com&tf=1" target="_blank" class="icon"><i class="fa-regular fa-envelope"></i><span>wongirengjembuten365@gmail.com</span></a>
+            </div>
+            <div class="powered">Bali 80361, Indonesia</div>
+            <div class="powered-photo font-poppins">&copy; Powered by | Photos by | Terms of Service | Privacy Policy</div>
+        </div>
+    </div>
+<!-- Side Menu End -->
+
+<!--Hero Section-->
+<div class="relative min-h-screen bg-cover bg-center" style="background-image: url('IMG/Background 4.jpg');"></div>
+<!--Hero Section-->
+
+<!-- Divisi Section begin-->
+     <div class="mb-24" id="divisi" data-aos="fade-up" data-aos-duration="2000">
+        <h2 class="font-extrabold text-4xl text-black pt-20 text-center">Divisi UKM Computer Club</h2>
+     <p class="pt-5 pb-5 m-auto text-black w-[50%] text-center">Unit Kegiatan Mahasiswa Computer Club memiliki empat divisi yang secara khusus membahas berbagai aspek penggunaan teknologi. Mahasiswa dapat memilih divisi yang sesuai dengan minat dan ketertarikan mereka masing-masing.</p>
+     </div>
+     
+     <div class="w-full h-[500px] flex justify-evenly flex-wrap">
+        <div class="border-2 rounded-xl bg-black text-center flex flex-col mb-2.5 pt-5 pb-5 w-1/2 h-1/2 " data-aos="zoom-in-right"  data-aos-duration="1500">
+            <a class="text-white" href="#">
+                <div class="w-full flex justify-center mb-4 text-white text-3xl">
+                    <h1><i class="fa-solid fa-file-word"></i></h1>
+                </div>
+                <div class="flex items-center justify-center text-center flex-col font-semibold text-white ">
+                    <h3>Photography</h3>
+                </div>
+                <div class="isi-divisi">
+                    <p>Divisi yang berfokus pada keterampilan Microsoft Office, seperti pengulahan kata, data, dan presentasi untuk meningkatkan efisiensi dalam pekerjaan administratif dan dokumentasi.</p>
+                </div>
+            </a>
+        </div>
+        <div class="border-2 rounded-xl bg-black text-center flex flex-col mb-2.5 pt-5 pb-5 w-1/2 h-1/2 " data-aos="zoom-in-right"  data-aos-duration="1500">
+            <a class="text-white" href="#">
+                <div class="w">
+                    <h1><i class="fa-solid fa-file-word"></i></h1>
+                </div>
+                <div class="nama-divisi">
+                    <h3>Videography</h3>
+                </div>
+                <div class="isi-divisi">
+                    <p>Divisi yang berfokus pada keterampilan Microsoft Office, seperti pengulahan kata, data, dan presentasi untuk meningkatkan efisiensi dalam pekerjaan administratif dan dokumentasi.</p>
+                </div>
+            </a>
+        </div>
+       
+     </div>
+     <!--END-->
+
+
+<script src="toggle.js"></script>
+</body>
+</html>
