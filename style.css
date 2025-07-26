@@ -107,27 +107,6 @@ nav {
   color: #050505;
 }
 
-/* Hero Section */
-/* .hero {
-  background: url('IMG/Background 4.jpg') center/cover;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  align-items: center;
-}
-
-.hero::before {
-  content: "";
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: black;
-  opacity: 0.2;
-  z-index: 1;
-} */
-
 /* Side Menu */
 .hamburger {
   font-size: 30px;
@@ -228,6 +207,10 @@ nav {
 .powered-photo {
   text-align: center;
   font-size: 11px;
+}
+
+#overlay {
+  transition: opacity 0.3s ease;
 }
 
 /*Main (Text)*/

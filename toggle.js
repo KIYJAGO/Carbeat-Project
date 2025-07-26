@@ -1,35 +1,4 @@
-// Navbar Atas (Arrow)
-function toggleDropdown(id, button) {
-const dropdown = document.getElementById(id);
-const allDropdowns = document.querySelectorAll('.dropdown-content');
-const allArrows = document.querySelectorAll('.arrow');
-
-  allDropdowns.forEach(d => {
-    if (d !== dropdown) d.style.display = 'none';
-  });
-
-  allArrows.forEach(a => {
-    if (a !== button.querySelector('.arrow')) a.textContent = '▼';
-  });
-
-  if (dropdown.style.display === 'block') {
-    dropdown.style.display = 'none';
-    button.querySelector('.arrow').textContent = '▼';
-  } else {
-    dropdown.style.display = 'block';
-    button.querySelector('.arrow').textContent = '▲';
-  }
-}
-
-// Close Dropdwown
-document.addEventListener('click', function (e) {
-  if (!e.target.closest('.dropdown')) {
-    document.querySelectorAll('.dropdown-content').forEach(d => d.style.display = 'none');
-    document.querySelectorAll('.arrow').forEach(a => a.textContent = '▼');
-  }
-});
-
-// Side-Bar & MB
+// Side-Bar
 document.addEventListener('DOMContentLoaded', function () {
   const hamburgerButton = document.getElementById('hamburgerButton');
   const sideMenu = document.getElementById('sideMenu');
@@ -73,7 +42,6 @@ const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > lastScrollY) {
-    // Scroll ke bawah → sembunyikan navbar
     navbar.style.transform = 'translateY(-100%)';
   } else {
 
@@ -92,7 +60,6 @@ document.querySelectorAll('.faq-btn').forEach(btn =>
 
 // Main Content Animation
 const reveals = document.querySelectorAll('.reveal');
-      
 window.addEventListener('scroll', () => {
   reveals.forEach((el) => {
     const top = el.getBoundingClientRect().top;
@@ -112,16 +79,6 @@ window.addEventListener("scroll", function () {
   parallax.style.transform = `translateY(${scrollY * 0.3}px)`;
 });
 
-// Video 
-const video = document.getElementById("bgVideo");
-video.addEventListener("click", () => {
-  if (video.paused) {
-    video.play();
-  } else {
-    video.pause();
-  }
-});
-
 // Contact
 document.querySelectorAll('.faq-btn').forEach((btn) => {
   btn.addEventListener('click', () => {
@@ -137,4 +94,3 @@ document.querySelectorAll('.faq-btn').forEach((btn) => {
     }
   });
 });
-

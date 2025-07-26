@@ -12,7 +12,6 @@
 
 <body>
 <!--Navbar Begin-->
-<!--Navbar Begin-->
 <nav id="navbar" class="fixed flex w-full z-50 shadow-md bg-white justify-between p-3 transitiion-all duration-300">
   <div class="h-12 flex items-center px-1">
     <a href="index.html" id="topBarLogo">
@@ -20,118 +19,262 @@
     </a>
   </div>
 
-<div class="menu-container">
-<div class="dropdown hidden w-full md:block md:w-auto">
-  <button class="dropdown-toggle" onclick="toggleDropdown('photoDropdown', this)">Photography <span class="arrow">▼</span>
-  </button>
-  <div id="photoDropdown" class="dropdown-content">
-    <a href="Pre-Wedding.html">Pre Wedding</a>
-    <a href="Wedding.html">Wedding</a>
-  </div>
-</div>
-
-<div class="dropdown hidden w-full md:block md:w-auto">
-  <button class="dropdown-toggle" onclick="toggleDropdown('videoDropdown', this)">Videography <span class="arrow">▼</span>
-  </button>
-  <div id="videoDropdown" class="dropdown-content">
-    <a href="Wedding.html">Wedding</a>
-  </div>
-</div>
-</div>
-    <div id="hamburgerButton" class="hamburger md:block" onclick="toggleMenu()">☰</div>
-  </div>
+<div id="hamburgerButton" class="hamburger md:block" onclick="toggleMenu()">☰</div>
 </nav>
 <!-- Navbar End -->
 
 <!-- Side Menu Begin -->
-
 <div class="side-menu" id="sideMenu">
   <div class="top">
     <div class="nav-logo" id="sideBarLogo">
-        <a href="#">
-          <img src="IMG/Logo/SENADA Resize.png" alt="Senada Logo">
-        </a>
+      <button class="btn-close font-bold cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>        
+      </button>
     </div>
       <a href="Photography.html">Photography</a>
       <a href="Videography.html">Videography</a>
       <a href="About.html">About</a>
       <a href="Service.html">Service</a>
-      <a href="Contact.html">Contact</a>
+      <a href="FAQ.html">FAQ</a>
   </div>
   <div class="bottom">
     <div class="contact-item">
         <a href="https://wa.me/+6285339047862" target="_blank" class="icon"><i class="fa-brands fa-whatsapp"></i><span>+628123456789</span></a>
     </div>
     <div class="contact-item">
-      <a href="https://www.instagram.com/senadapictures?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i><span>@senadapictures</span></a>
+      <a href="https://www.instagram.com/" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i><span>@carbeatpictures</span></a>
     </div>
     <div class="contact-item">
-      <a href="https://maps.app.goo.gl/pJCjfqzjXT8QCr5k9" target="_blank" class="icon"><i class="fa-solid fa-location-dot"></i><span>Jl. Apa Aja Lah No.24</span></a>
+      <a href="https://maps.app.goo.gl/2153Bt6n4CiF1S9G8" target="_blank" class="icon"><i class="fa-solid fa-location-dot"></i><span>Jl. Apa Aja Lah No.24</span></a>
     </div>
     <div class="contact-item">
-      <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=kiyrandom@gmail.com&tf=1" target="_blank" class="icon"><i class="fa-regular fa-envelope"></i><span>wongirengjembuten365@gmail.com</span></a>
+      <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=lordkarbiter@gmail.com&tf=1" target="_blank" class="icon"><i class="fa-regular fa-envelope"></i><span>no1karbiter@gmail.com</span></a>
     </div>
-    <div class="powered">Bali 80361, Indonesia</div>
-    <div class="powered-photo">&copy; Powered by | Photos by | Terms of Service | Privacy Policy</div>
+    <div class="powered font-poppins">Bali 80361, Indonesia</div>
+    <div class="powered-photo font-poppins">&copy; Powered by KIYJAGO | Photos by KIYJAGO | Terms of Service | Privacy Policy</div>
   </div>
 </div>
 <!-- Side Menu End -->
 
 <!--Main Content Begin-->
-<section class="relative h-screen overflow-hidden">
-    <div id="parallaxHero"
-         class="absolute inset-0 bg-cover bg-center will-change-transform"
-         style="background-image:url('IMG/Background 5.jpg');">
-    </div>
-</section>
+<div id="firstContent">
+  <section>
+    <img src="IMG/Background 6.jpg" alt="Background" class="w-full object-cover">
+  </section>
   
-  <section class="bg-white px-6 md:px-48 py-20 relative z-10">
-    <p class="text-[11px] uppercase tracking-widest text-gray-500 mb-6">
-      JUN 11, 2025
+  <section class="max-w-4xl mx-auto px-4 pt-10 pb-10">
+    <h1 class="text-3xl font-semibold text-gray-900 mb-2">
+      Bali, The Thousand Temples
+    </h1>
+    <p class="text-gray-400 italic mb-6">
+      Explore the Island of Gods
     </p>
-  
-    <h2 class="text-3xl md:text-4xl font-semibold mb-8">
-      Sumba: The Edge of Magic
-    </h2>
-  
-    <p class="text-gray-700 leading-relaxed mb-6">
-      Dubbed as the must‑visit emerging paradise in the East region of Indonesia,
-      Sumba first came to the spotlight around 2010.
+    <p class="text-gray-700 text-lg leading-relaxed mb-5">
+      Welcome to Bali, the mystical island known as "The Island of a Thousand Temples." This enchanting destination offers a spiritual journey through ancient temples, rich traditions, and stunning natural beauty. From the majestic sea temples that stand against dramatic cliffs to the serene jungle sanctuaries hidden among rice terraces, Bali invites every traveler to discover its timeless charm.
     </p>
-  
-    <p class="text-gray-700 leading-relaxed">
-      Decades later, we can still attest to its breathtaking beauty – one that
-      outlasted the hype and remained exactly as she is: wild, iconic, and
-      effortlessly stunning.
+    <p class="text-gray-700 text-lg leading-relaxed">
+      As you explore Bali, you'll encounter breathtaking views and unique cultural experiences at every corner. From the iconic Tanah Lot and Uluwatu temples overlooking the ocean to the tranquil Tirta Empul and Besakih temples nestled in the mountains, each site tells a story of devotion, history, and harmony with nature. Let this journey captivate your heart and ignite your sense of wonder.
     </p>
   </section>
   
+  <div class="max-w-4xl mx-auto pb-8 pt-16">
+    <h2 class="text-2xl border-b-1 border-black transition-all duration-200 hover:border-b-4 active:border-b-4 active:text-black inline-block">
+      Gallery
+    </h2>    
+  </div>
+</div>
+
+<!--Gallery-->
+<div class="flex flex-col gap-8">
+  <div class="overflow-hidden rounded-lg">
+    <img src="IMG/Background 1.jpg" alt="Gallery Image" class="w-full max-w-4xl mx-auto h-auto object-contain">
+  </div>
+
+  <div class="overflow-hidden rounded-lg">
+    <img src="IMG/Background 2.jpg" alt="Gallery Image" class="w-full max-w-4xl mx-auto h-auto object-contain">
+  </div>
+
+  <div class="overflow-hidden rounded-lg">
+    <img src="IMG/Background 3.jpg" alt="Gallery Image" class="w-full max-w-4xl mx-auto h-auto object-contain">
+  </div>
+
+  <div class="overflow-hidden rounded-lg">
+    <img src="IMG/Background 4.jpg" alt="Gallery Image" class="w-full max-w-4xl mx-auto h-auto object-contain">
+  </div>
+
+  <div class="overflow-hidden rounded-lg">
+    <img src="IMG/Background 5.jpg" alt="Gallery Image" class="w-full max-w-4xl mx-auto h-auto object-contain">
+  </div>
+
+  <div class="overflow-hidden rounded-lg">
+    <img src="IMG/Background 7.jpg" alt="Gallery Image" class="w-full max-w-4xl mx-auto h-auto object-contain">
+  </div>
+
+  <div class="overflow-hidden rounded-lg">
+    <img src="IMG/Background 6.jpg" alt="Gallery Image" class="w-full max-w-4xl mx-auto h-auto object-contain">
+  </div>
+
+  <div class="overflow-hidden rounded-lg">
+    <img src="IMG/Background 7.jpg" alt="Gallery Image" class="w-full max-w-4xl mx-auto h-auto object-contain">
+  </div>
+
+  <div class="overflow-hidden rounded-lg">
+    <img src="IMG/Background 8.jpg" alt="Gallery Image" class="w-full max-w-4xl mx-auto h-auto object-contain">
+  </div>
+</div>
+
+<!--Content 3-->
+<div id="thirdContent">
+  <div class="flex px-28 pt-16">
+    <h2 class="text-[20px] md:text-[18px] border-b-1 border-black transition-all duration-200 hover:border-b-4 active:border-b-4 active:text-black inline-block">
+      Recent Posts
+    </h2>    
+  </div>
+  
+  <div class="max-w-6xl mx-auto p-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+  
+      <div>
+        <div class="relative aspect-square overflow-hidden rounded-lg group opacity-0 translate-y-10 transition-all duration-700 ease-out reveal z-100">
+        <img src="IMG/Background 1.jpg" alt="Bride" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300">
+          <div class="absolute inset-0 group-hover:bg-black/15 transition duration-850">
+            <a href="Content-Vid.html" class="absolute inset-0 flex items-center justify-center">
+            <!--Button-->
+            <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-white group-hover:scale-100">
+              <svg class="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M6 4l10 6-10 6V4z"/>
+              </svg>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="relative aspect-square overflow-hidden rounded-lg group opacity-0 translate-y-10 transition-all duration-700 ease-out reveal z-100">
+        <a href="Content.html">
+          <img src="IMG/Background 2.jpg" alt="Gallery Image" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300">
+          <div class="absolute inset-0 bg-white/60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center">
+            <div class="text-black text-sm/2 leading-tight font-medium p-6 pt-52">
+              <p>KIYJAGO</p>
+              <p>Walk of Love</p>
+            </div>
+          </div>
+        </a>
+      </div>
+  
+      <div>
+        <div class="relative aspect-square overflow-hidden rounded-lg group opacity-0 translate-y-10 transition-all duration-700 ease-out reveal z-100">
+        <img src="IMG/Background 3.jpg" alt="Bride" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300">
+          <div class="absolute inset-0 group-hover:bg-black/15 transition duration-850">
+            <a href="Content-Vid.html" class="absolute inset-0 flex items-center justify-center">
+            <!--Button-->
+            <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-white group-hover:scale-100">
+              <svg class="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M6 4l10 6-10 6V4z"/>
+              </svg>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="relative aspect-square overflow-hidden rounded-lg group opacity-0 translate-y-10 transition-all duration-700 ease-out reveal z-100">
+        <a href="Content.html">
+          <img src="IMG/Background 4.jpg" alt="Gallery Image" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300">
+          <div class="absolute inset-0 bg-white/60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center">
+            <div class="text-black text-sm/2 leading-tight font-medium p-6 pt-52">
+              <p>KIYJAGO</p>
+              <p>Walk of Love</p>
+            </div>
+          </div>
+        </a>
+      </div>
+  
+      <div>
+        <div class="relative aspect-square overflow-hidden rounded-lg group opacity-0 translate-y-10 transition-all duration-700 ease-out reveal z-100">
+        <img src="IMG/Background 5.jpg" alt="Bride" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300">
+          <div class="absolute inset-0 group-hover:bg-black/15 transition duration-850">
+            <a href="Content-Vid.html" class="absolute inset-0 flex items-center justify-center">
+            <!--Button-->
+            <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-white group-hover:scale-100">
+              <svg class="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M6 4l10 6-10 6V4z"/>
+              </svg>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="hidden lg:block relative aspect-square overflow-hidden rounded-lg group opacity-0 translate-y-10 transition-all duration-700 ease-out reveal z-100">
+        <a href="Content.html">
+          <img src="IMG/Background 6.jpg" alt="Gallery Image" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300">
+          <div class="absolute inset-0 bg-white/60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center">
+            <div class="text-black text-sm/2 leading-tight font-medium p-6 pt-52">
+              <p>KIYJAGO</p>
+              <p>Walk of Love</p>
+            </div>
+          </div>
+        </a>
+      </div>
+  
+      <div>
+        <div class="relative aspect-square overflow-hidden rounded-lg group opacity-0 translate-y-10 transition-all duration-700 ease-out reveal z-100">
+        <img src="IMG/Background 7.jpg" alt="Bride" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300">
+          <div class="absolute inset-0 group-hover:bg-black/15 transition duration-850">
+            <a href="Content-Vid.html" class="absolute inset-0 flex items-center justify-center">
+            <!--Button-->
+            <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-white group-hover:scale-100">
+              <svg class="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M6 4l10 6-10 6V4z"/>
+              </svg>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="hidden lg:block relative aspect-square overflow-hidden rounded-lg group opacity-0 translate-y-10 transition-all duration-700 ease-out reveal z-100">
+        <a href="Content.html">
+          <img src="IMG/Background 8.jpg" alt="Gallery Image" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300">
+          <div class="absolute inset-0 bg-white/60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center">
+            <div class="text-black text-sm/2 leading-tight font-medium p-6 pt-52">
+              <p>KIYJAGO</p>
+              <p>Walk of Love</p>
+            </div>
+          </div>
+        </a>
+      </div>
+  
+    </div>
+  </div>
+</div>
+
 <!--Footer Begin-->
 <footer class="bg-white border-t border-dashed border-gray-400 mt-10">
   <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-start gap-8">
-    
-    <div>
-      <a href="#">
-        <img src="IMG/Logo/Carbeat Logo (Black).png" alt="Carbeat Pictures" class="h-10 mb-2">
-      </a>
-    </div>
+    <a href="index.html">
+      <img src="IMG/Logo/Carbeat Logo (Black).png" alt="Carbeat Pictures" class="h-10 mb-2">
+    </a>
     
     <div class="text-sm/5 text-gray-600">
       <p class="text-xs mb-1">by appointment only</p>
-      <p class="text-xs mb-1"><a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=kiyrandom@gmail.com&tf=1" target="_blank" class="text-gray-800">wongirengjembuten365@gmail.com</a></p>
+      <p class="text-xs mb-1"><a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=lordkarbiter.com&tf=1" target="_blank" class="text-gray-800">no1karbiter@gmail.com</a></p>
       <p class="text-xs mb-1">Kampus Bukit, Jimbaran, South Kuta, Badung Regency</p>
       <p class="text-xs mb-1">Bali 80361, Indonesia</p>
     </div>
 
     <div class="flex space-x-4 text-gray-500 text-2xl">
       <a href="https://wa.me/+6285339047862" target="_blank" class="hover:text-black"><i class="fa-brands fa-whatsapp"></i></a>
-      <a href="https://www.instagram.com/senadapictures?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="hover:text-black"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#" class="hover:text-black "><i class="fa-brands fa-facebook"></i></a>
-      <a href="#" class="hover:text-black"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.instagram.com/" target="_blank" class="hover:text-black"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/" target="_blank" class="hover:text-black "><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.youtube.com/" target="_blank" class="hover:text-black"><i class="fa-brands fa-youtube"></i></a>
     </div>
   </div>
 
-  <div class="text-center text-xs text-gray-500 pb-6">
+  <div class="text-center text-xs text-gray-500 pb-4">
     &copy; Carbeat Pictures 2025
   </div>
 </footer>
@@ -139,13 +282,5 @@
 
 <!--Toggle Script-->
 <script src="toggle.js"></script>
-<script>
-  const speed = 0.25;
-  window.addEventListener('scroll', () => {
-    const y = window.scrollY;
-    document.getElementById('parallaxHero')
-      .style.transform = `translateY(${y * speed}px)`;
-  });
-</script>
 </body>
 </html>
