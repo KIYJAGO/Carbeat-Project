@@ -19,23 +19,7 @@
     </a>
   </div>
 
-<div class="menu-container">
-<div class="dropdown hidden w-full md:block md:w-auto">
-  <button class="dropdown-toggle" onclick="toggleDropdown('photoDropdown', this)">Photography <span class="arrow">▼</span>
-  </button>
-  <div id="photoDropdown" class="dropdown-content">
-    <a href="Pre-Wedding.html">Pre Wedding</a>
-    <a href="Wedding.html">Wedding</a>
-  </div>
-</div>
 
-<div class="dropdown hidden w-full md:block md:w-auto">
-  <button class="dropdown-toggle" onclick="toggleDropdown('videoDropdown', this)">Videography <span class="arrow">▼</span>
-  </button>
-  <div id="videoDropdown" class="dropdown-content">
-    <a href="Wedding.html">Wedding</a>
-  </div>
-</div>
 </div>
     <div id="hamburgerButton" class="hamburger md:block" onclick="toggleMenu()">☰</div>
   </div>
@@ -77,19 +61,15 @@
 <div class="relative min-h-screen bg-cover bg-center" style="background-image: url('IMG/Background 4.jpg');">
   <div class="relative min-h-screen bg-cover bg-center" style="background-color: 	rgba(0, 0, 0, 0.6)">
 
-    <div class="relative z-20 flex items-center justify-center min-h-screen px-4">
-      <div class="text-center max-w-3xl text-white">
-        <h1 class="text-4xl font-bold mb-4">Capturing Moments. Creating Stories.</h1>
-        <p class="text-lg mb-6">
-          At Carbeat Studio, we transform fleeting moments into timeless visuals — preserving your most heartfelt memories through stunning photography and cinematic videography.
+    <div class="relative z-20 mr-10 flex items-center  justify-start min-h-screen px-4">
+      <div class="text-start max-w-3xl text-white">
+        <h1 class="text-4xl font-bold pt-6 mb-4">Carbeat Studio</h1>
+        <p class="text-lg mb-2">
+          "We bring your memories to life through timeless visuals capturing emotions, not just frames. <br> From personal moments to grand events, every shot is a story worth telling."
         </p>
-        <div class="flex flex-wrap justify-center gap-4">
-          <a href="#start">
-            <button class="hover:bg-white hover:text-black text-white font-semibold px-6 py-2 border-2 border-white rounded-xl shadow-md transition duration-300">
-              View Portfolio
-            </button>
+        <p class="text-lg mb-6">#FrameTheFeeling</p>
           <a href="Service.html">
-            <button class="hover:bg-white hover:text-black text-white font-semibold px-6 py-2 border-2 border-white rounded-xl shadow-md transition duration-300">
+            <button class="hover:bg-black hover:text-white bg-white text-black font-semibold px-6 py-2 border-2 border-white rounded-xl shadow-md transition duration-300">
               Book Now
             </button>
           </a>
@@ -106,11 +86,11 @@
 <div>
    <div class="mb-24" id="#">
         <h2 class="font-extrabold text-4xl text-black pt-20 text-center">Carbeat - Studio</h2>
-     <p class="pt-5 pb-5 m-auto text-black w-[50%] text-center">Carbeat Pictures offers two main services focused on visual storytelling: photography and videography. Each service is designed to capture moments with aesthetic precision, professionalism, and meaning.</p>
+     <p class="pt-5 mx-auto text-black w-[50%] text-center">Carbeat Pictures offers two main services focused on visual storytelling: photography and videography. Each service is designed to capture moments with aesthetic precision, professionalism, and meaning.</p>
      </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-2 px-5 mb-5">
-        <a href="#photo" class="border rounded-2xl bg-black"> 
+        <div class="border rounded-2xl bg-black"> 
           <div class="pt-5 text-white flex justify-center mb-4 text-5xl">
             <i class="fa-solid fa-camera"></i>
           </div>
@@ -120,9 +100,16 @@
           <div class="text-white px-6 pb-5 text-center ">
             <p>Our professional photography service covers a wide range of needs — from personal portraits and product shoots to events. We capture every moment with the best angles, perfect lighting, and results that are ready for publication.</p>
           </div>
-        </a>
+          <div class="text-center pb-5">
+            <a href="#photo">
+            <button class="hover:bg-black hover:text-white bg-white text-black font-semibold px-6 py-2 border-2 border-white rounded-xl shadow-md transition duration-300">
+              Photo Showcase
+            </button>
+          </a>
+          </div>
+        </div>
 
-        <a href="#pidio" class="border rounded-2xl bg-black">
+        <div class="border rounded-2xl bg-black">
           <div class="pt-5 text-white flex justify-center mb-4 text-5xl ">
             <i class="fa-solid fa-video"></i>
           </div>
@@ -132,14 +119,21 @@
           <div class="text-white px-6 pb-5 text-center ">
             <p>Our cinematic videography service is ideal for documenting events, creating promotional videos, and visual storytelling. We use modern filming techniques with strong narrative flow to deliver powerful, high-quality videos.</p>
           </div>
-        </a>
+          <div class="text-center pb-5">
+            <a href="#pidio">
+            <button class="hover:bg-black hover:text-white bg-white text-black font-semibold px-6 py-2 border-2 border-white rounded-xl shadow-md transition duration-300">
+              Watch Our Reel
+            </button>
+          </a>
+          </div>
+        </div>
       </div>
 
       <hr class="border-dashed border-gray-400 w-full px-5 pt-5">
 </div>
 
 <div class="flex px-9 md:px-9 lg:px-32 mt-8">
-  <h2 class="text-[18px] mb-2 border-b-2 border-black transition-all duration-200 hover:border-b-4 active:border-b-4 active:text-black inline-block">
+  <h2 id="portofolio" class="text-[18px] mb-2 border-b-2 border-black transition-all duration-200 hover:border-b-4 active:border-b-4 active:text-black inline-block">
     Latest Posts
   </h2>    
 </div>
