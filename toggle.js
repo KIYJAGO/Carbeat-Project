@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
   sideBarLogo?.addEventListener('click', handleLogoClick);
 });
 
-// Close Right-Bar
+// Close Side-Bar
 document.addEventListener('click', function(e) {
   if (sideMenu.classList.contains('open') && !sideMenu.contains(e.target) && e.target !== hamburgerButton) {
     sideMenu.classList.remove('open');
@@ -50,13 +50,29 @@ window.addEventListener('scroll', () => {
   lastScrollY = window.scrollY;
 });
 
-// Contact Features
+// FAQ Features
 document.querySelectorAll('.faq-btn').forEach(btn => 
   { 
     btn.addEventListener('click', () => { 
       const content = btn.nextElementSibling; const icon = btn.querySelector('svg'); content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px'; icon.classList.toggle('rotate-180'); 
     }); 
-  }); 
+  });
+
+// FAQ
+document.querySelectorAll('.faq-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const content = btn.nextElementSibling;
+    const icon = btn.querySelector('.faq-icon');
+
+    const isOpen = content.classList.contains('faq-open');
+
+   if (isOpen) {
+      content.classList.remove('max-h-0');
+      content.classList.add('faq-open');
+      icon.classList.add('rotate-180');
+    }
+  });
+});
 
 // Main Content Animation
 const reveals = document.querySelectorAll('.reveal');
@@ -77,20 +93,4 @@ window.addEventListener("scroll", function () {
   const scrollY = window.scrollY;
   const parallax = document.getElementById("parallax");
   parallax.style.transform = `translateY(${scrollY * 0.3}px)`;
-});
-
-// Contact
-document.querySelectorAll('.faq-btn').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const content = btn.nextElementSibling;
-    const icon = btn.querySelector('.faq-icon');
-
-    const isOpen = content.classList.contains('faq-open');
-
-   if (isOpen) {
-      content.classList.remove('max-h-0');
-      content.classList.add('faq-open');
-      icon.classList.add('rotate-180');
-    }
-  });
 });
