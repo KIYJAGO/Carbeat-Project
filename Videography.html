@@ -24,20 +24,39 @@
 <!--Navbar End-->
 
 <!--Side Menu Begin-->
-<div class="side-menu" id="sideMenu">
+<div class="side-menu fixed" id="sideMenu">
   <div class="top">
-    <div class="nav-logo" id="sideBarLogo">
-      <button class="btn-close font-bold cursor-pointer">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <div>
+      <button class="btn-close font-bold cursor-pointer mb-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5.5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </svg>        
       </button>
     </div>
-      <a href="Photography.html">Photography</a>
-      <a href="Videography.html">Videography</a>
-      <a href="About.html">About</a>
-      <a href="Service.html">Service</a>
-      <a href="FAQ.html">FAQ</a>
+    <a href="Photography.html" class="relative group">
+      <span class="pb-1">Photography</span>
+      <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+    </a>    
+    <a href="Videography.html" class="relative group">
+      <span class="pb-1">Videography</span>
+      <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+    </a>
+      <a href="About.html" class="relative group">
+        <span class="pb-1">About</span>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+      </a>
+      <a href="Service.html" class="relative group">
+        <span>Service</span>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+      </a>
+      <a href="FAQ.html" class="relative group">
+        <span>FAQ</span>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+      </a>
+      <a href="Gear.html" class="relative group">
+        <span>Gears</span>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+      </a>
   </div>
   <div class="bottom">
     <div class="contact-item">
@@ -56,19 +75,22 @@
     <div class="powered-photo font-poppins">&copy; Powered by KIYJAGO | Photos by KIYJAGO | Terms of Service | Privacy Policy</div>
   </div>
 </div>
+
+<div id="overlay" class="overlay fixed h-screen w-screen inset-0 bg-black/45 hidden z-101"></div>
 <!--Side Menu End-->
 
 <!--Main Begin-->
-<h2 class="text-center text-xl tracking-[0.3em] font-medium uppercase pt-30">Red Thread</h2>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-10 px-6 max-w-7xl mx-auto py-12 pb-6">
+<h2 class="text-center text-xl tracking-[0.3em] font-medium uppercase pt-32">CINEMATOGRAPHY</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10 px-6 max-w-7xl mx-auto py-6 pb-16">
+
   <!--Card-->
-  <div>
+  <div class="card opacity-0 translate-y-10 transition-all duration-700 ease-out">
     <div class="group relative">
-    <img src="IMG/Background 1.jpg" alt="Gallery Images" class="w-full aspect-[4/5] object-cover">
-      <div class="absolute inset-0 group-hover:bg-black/15 transition duration-850">
+      <img src="IMG/Background 1.jpg" alt="Gallery Images" class="w-full aspect-[4/5] object-cover rounded-md">
+      <div class="absolute inset-0 group-hover:bg-black/15 transition duration-500">
         <a href="Content-Vid.html" class="absolute inset-0 flex items-center justify-center">
-        <!--Button-->
-          <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-white group-hover:scale-100">
+          <!-- Button -->
+          <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-white">
             <svg class="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
               <path d="M6 4l10 6-10 6V4z"/>
             </svg>
@@ -76,71 +98,22 @@
         </a>
       </div>
     </div>
-    <!--Text-->
+    <!-- Text -->
     <div class="text-[11px] text-gray-400 uppercase mt-3 tracking-[.25em] space-x-2 hover:text-gray-950 transition duration-400">
       <span><i class="fa-solid fa-video"></i> LOKI</span><span>|</span><span>WEDDING</span><span>|</span><span>BALI</span>
     </div>
     <h3 class="text-lg font-semibold mt-3">When You Know, You Know</h3>
     <p class="text-sm text-gray-400 mt-2">Loki Ft. Loki (Girl)</p>
     <p class="text-sm text-gray-700 mt-1">Learn from our couple! Here's how to marry your soulmate and turn the most important day of your life into the most unforgettable one as well.</p>
-    <footer class="bg-white border-t border-double border-gray-400 mt-8 pb-8">
   </div>
 
-  <div>
+  <div class="card opacity-0 translate-y-10 transition-all duration-700 ease-out">
     <div class="group relative">
-    <img src="IMG/Background 2.jpg" alt="Gallery Images" class="w-full aspect-[4/5] object-cover">
-      <div class="absolute inset-0 group-hover:bg-black/15 transition duration-850">
-          <a href="Content-Vid.html" class="absolute inset-0 flex items-center justify-center">
-          <!--Button-->
-          <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-white group-hover:scale-100">
-              <svg class="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M6 4l10 6-10 6V4z"/>
-              </svg>
-          </div>
-          </a>
-      </div>
-    </div>
-    <!--Text-->
-    <div class="text-[11px] text-gray-400 uppercase mt-3 tracking-[.25em] space-x-2 hover:text-gray-950 transition duration-400">
-      <span><i class="fa-solid fa-video"></i> LOKI</span><span>|</span><span>WEDDING</span><span>|</span><span>BALI</span>
-    </div>
-    <h3 class="text-lg font-semibold mt-3">When You Know, You Know</h3>
-    <p class="text-sm text-gray-400 mt-2">Loki Ft. Loki (Girl)</p>
-    <p class="text-sm text-gray-700 mt-1">Learn from our couple! Here's how to marry your soulmate and turn the most important day of your life into the most unforgettable one as well.</p>
-    <footer class="bg-white border-t border-double border-gray-400 mt-8 pb-8">
-  </div>
-
-  <div>
-    <div class="group relative">
-    <img src="IMG/Background 3.jpg" alt="Gallery Images" class="w-full aspect-[4/5] object-cover">
-      <div class="absolute inset-0 group-hover:bg-black/15 transition duration-850">
+      <img src="IMG/Background 2.jpg" alt="Gallery Images" class="w-full aspect-[4/5] object-cover rounded-md">
+      <div class="absolute inset-0 group-hover:bg-black/15 transition duration-500">
         <a href="Content-Vid.html" class="absolute inset-0 flex items-center justify-center">
-        <!--Button-->
-          <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-white group-hover:scale-100">
-              <svg class="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M6 4l10 6-10 6V4z"/>
-              </svg>
-          </div>
-        </a>
-      </div>
-    </div>
-    <!--Text-->
-    <div class="text-[11px] text-gray-400 uppercase mt-3 tracking-[.25em] space-x-2 hover:text-gray-950 transition duration-400">
-      <span><i class="fa-solid fa-video"></i> LOKI</span><span>|</span><span>WEDDING</span><span>|</span><span>BALI</span>
-    </div>
-    <h3 class="text-lg font-semibold mt-3">When You Know, You Know</h3>
-    <p class="text-sm text-gray-400 mt-2">Loki Ft. Loki (Girl)</p>
-    <p class="text-sm text-gray-700 mt-1">Learn from our couple! Here's how to marry your soulmate and turn the most important day of your life into the most unforgettable one as well.</p>
-    <footer class="bg-white border-t border-double border-gray-400 mt-8 pb-8 ">
-  </div>
-
-  <div>
-    <div class="group relative mt-6">
-    <img src="IMG/Background 4.jpg" alt="Gallery Images" class="w-full aspect-[4/5] object-cover">
-      <div class="absolute inset-0 group-hover:bg-black/15 transition duration-850">
-        <a href="Content-Vid.html" class="absolute inset-0 flex items-center justify-center">
-        <!--Button-->
-          <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-white group-hover:scale-100">
+          <!-- Button -->
+          <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-white">
             <svg class="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
               <path d="M6 4l10 6-10 6V4z"/>
             </svg>
@@ -148,62 +121,105 @@
         </a>
       </div>
     </div>
-    <!--Text-->
+    <!-- Text -->
     <div class="text-[11px] text-gray-400 uppercase mt-3 tracking-[.25em] space-x-2 hover:text-gray-950 transition duration-400">
       <span><i class="fa-solid fa-video"></i> LOKI</span><span>|</span><span>WEDDING</span><span>|</span><span>BALI</span>
     </div>
     <h3 class="text-lg font-semibold mt-3">When You Know, You Know</h3>
     <p class="text-sm text-gray-400 mt-2">Loki Ft. Loki (Girl)</p>
     <p class="text-sm text-gray-700 mt-1">Learn from our couple! Here's how to marry your soulmate and turn the most important day of your life into the most unforgettable one as well.</p>
-    <footer class="bg-white border-t border-double border-gray-400 mt-8 pb-8">
   </div>
 
-  <div>
-    <div class="group relative mt-6">
-    <img src="IMG/Background 5.jpg" alt="Gallery Images" class="w-full aspect-[4/5] object-cover">
-      <div class="absolute inset-0 group-hover:bg-black/15 transition duration-850">
+  <div class="card opacity-0 translate-y-10 transition-all duration-700 ease-out">
+    <div class="group relative">
+      <img src="IMG/Background 3.jpg" alt="Gallery Images" class="w-full aspect-[4/5] object-cover rounded-md">
+      <div class="absolute inset-0 group-hover:bg-black/15 transition duration-500">
         <a href="Content-Vid.html" class="absolute inset-0 flex items-center justify-center">
-        <!--Button-->
-        <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-white group-hover:scale-100">
-          <svg class="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M6 4l10 6-10 6V4z"/>
-          </svg>
-        </div>
+          <!-- Button -->
+          <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-white">
+            <svg class="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M6 4l10 6-10 6V4z"/>
+            </svg>
+          </div>
         </a>
       </div>
     </div>
-    <!--Text-->
+    <!-- Text -->
     <div class="text-[11px] text-gray-400 uppercase mt-3 tracking-[.25em] space-x-2 hover:text-gray-950 transition duration-400">
       <span><i class="fa-solid fa-video"></i> LOKI</span><span>|</span><span>WEDDING</span><span>|</span><span>BALI</span>
     </div>
     <h3 class="text-lg font-semibold mt-3">When You Know, You Know</h3>
     <p class="text-sm text-gray-400 mt-2">Loki Ft. Loki (Girl)</p>
-    <p class="text-sm text-gray-700 mt-1">Learn from our couple! Here’s how to marry your soulmate and turn the most important day of your life into the most unforgettable one as well.</p>
-    <footer class="bg-white border-t border-double border-gray-400 mt-8 pb-8">
+    <p class="text-sm text-gray-700 mt-1">Learn from our couple! Here's how to marry your soulmate and turn the most important day of your life into the most unforgettable one as well.</p>
   </div>
 
-  <div>
-    <div class="group relative mt-6">
-    <img src="IMG/Background 6.jpg" alt="Gallery Images" class="w-full aspect-[4/5] object-cover">
-      <div class="absolute inset-0 group-hover:bg-black/15 transition duration-850">
+  <div class="card opacity-0 translate-y-10 transition-all duration-700 ease-out">
+    <div class="group relative">
+      <img src="IMG/Background 4.jpg" alt="Gallery Images" class="w-full aspect-[4/5] object-cover rounded-md">
+      <div class="absolute inset-0 group-hover:bg-black/15 transition duration-500">
         <a href="Content-Vid.html" class="absolute inset-0 flex items-center justify-center">
-        <!--Button-->
-        <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-white group-hover:scale-100">
-          <svg class="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M6 4l10 6-10 6V4z"/>
-          </svg>
-        </div>
+          <!-- Button -->
+          <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-white">
+            <svg class="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M6 4l10 6-10 6V4z"/>
+            </svg>
+          </div>
         </a>
       </div>
     </div>
-    <!--Text-->
+    <!-- Text -->
     <div class="text-[11px] text-gray-400 uppercase mt-3 tracking-[.25em] space-x-2 hover:text-gray-950 transition duration-400">
       <span><i class="fa-solid fa-video"></i> LOKI</span><span>|</span><span>WEDDING</span><span>|</span><span>BALI</span>
     </div>
     <h3 class="text-lg font-semibold mt-3">When You Know, You Know</h3>
     <p class="text-sm text-gray-400 mt-2">Loki Ft. Loki (Girl)</p>
-    <p class="text-sm text-gray-700 mt-1">Learn from our couple! Here’s how to marry your soulmate and turn the most important day of your life into the most unforgettable one as well.</p>
-    <footer class="bg-white border-t border-double border-gray-400 mt-8 pb-8">
+    <p class="text-sm text-gray-700 mt-1">Learn from our couple! Here's how to marry your soulmate and turn the most important day of your life into the most unforgettable one as well.</p>
+  </div>
+
+  <div class="card opacity-0 translate-y-10 transition-all duration-700 ease-out">
+    <div class="group relative">
+      <img src="IMG/Background 5.jpg" alt="Gallery Images" class="w-full aspect-[4/5] object-cover rounded-md">
+      <div class="absolute inset-0 group-hover:bg-black/15 transition duration-500">
+        <a href="Content-Vid.html" class="absolute inset-0 flex items-center justify-center">
+          <!-- Button -->
+          <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-white">
+            <svg class="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M6 4l10 6-10 6V4z"/>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- Text -->
+    <div class="text-[11px] text-gray-400 uppercase mt-3 tracking-[.25em] space-x-2 hover:text-gray-950 transition duration-400">
+      <span><i class="fa-solid fa-video"></i> LOKI</span><span>|</span><span>WEDDING</span><span>|</span><span>BALI</span>
+    </div>
+    <h3 class="text-lg font-semibold mt-3">When You Know, You Know</h3>
+    <p class="text-sm text-gray-400 mt-2">Loki Ft. Loki (Girl)</p>
+    <p class="text-sm text-gray-700 mt-1">Learn from our couple! Here's how to marry your soulmate and turn the most important day of your life into the most unforgettable one as well.</p>
+  </div>
+
+  <div class="card opacity-0 translate-y-10 transition-all duration-700 ease-out">
+    <div class="group relative">
+      <img src="IMG/Background 6.jpg" alt="Gallery Images" class="w-full aspect-[4/5] object-cover rounded-md">
+      <div class="absolute inset-0 group-hover:bg-black/15 transition duration-500">
+        <a href="Content-Vid.html" class="absolute inset-0 flex items-center justify-center">
+          <!-- Button -->
+          <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-white">
+            <svg class="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M6 4l10 6-10 6V4z"/>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- Text -->
+    <div class="text-[11px] text-gray-400 uppercase mt-3 tracking-[.25em] space-x-2 hover:text-gray-950 transition duration-400">
+      <span><i class="fa-solid fa-video"></i> LOKI</span><span>|</span><span>WEDDING</span><span>|</span><span>BALI</span>
+    </div>
+    <h3 class="text-lg font-semibold mt-3">When You Know, You Know</h3>
+    <p class="text-sm text-gray-400 mt-2">Loki Ft. Loki (Girl)</p>
+    <p class="text-sm text-gray-700 mt-1">Learn from our couple! Here's how to marry your soulmate and turn the most important day of your life into the most unforgettable one as well.</p>
   </div>
 </div>
 <!--Main End-->

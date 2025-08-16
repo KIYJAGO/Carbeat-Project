@@ -24,20 +24,39 @@
 <!-- Navbar End -->
 
 <!--Side Menu Begin-->
-<div class="side-menu" id="sideMenu">
+<div class="side-menu fixed" id="sideMenu">
   <div class="top">
-    <div class="nav-logo" id="sideBarLogo">
-      <button class="btn-close font-bold cursor-pointer">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <div>
+      <button class="btn-close font-bold cursor-pointer mb-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5.5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </svg>        
       </button>
     </div>
-      <a href="Photography.html">Photography</a>
-      <a href="Videography.html">Videography</a>
-      <a href="About.html">About</a>
-      <a href="Service.html">Service</a>
-      <a href="FAQ.html">FAQ</a>
+    <a href="Photography.html" class="relative group">
+      <span class="pb-1">Photography</span>
+      <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+    </a>    
+    <a href="Videography.html" class="relative group">
+      <span class="pb-1">Videography</span>
+      <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+    </a>
+      <a href="About.html" class="relative group">
+        <span class="pb-1">About</span>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+      </a>
+      <a href="Service.html" class="relative group">
+        <span>Service</span>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+      </a>
+      <a href="FAQ.html" class="relative group">
+        <span>FAQ</span>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+      </a>
+      <a href="Gear.html" class="relative group">
+        <span>Gears</span>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+      </a>
   </div>
   <div class="bottom">
     <div class="contact-item">
@@ -56,17 +75,19 @@
     <div class="powered-photo font-poppins">&copy; Powered by KIYJAGO | Photos by KIYJAGO | Terms of Service | Privacy Policy</div>
   </div>
 </div>
+
+<div id="overlay" class="overlay fixed h-screen w-screen inset-0 bg-black/45 hidden z-101"></div>
 <!--Side Menu End-->
 
 <!--Main Begin-->
 <div class="relative w-full min-h-screen pt-17">
   <!-- Background -->
-  <img src="IMG/Background 1.jpg" alt="Background Images" class="w-full h-full object-cover absolute inset-0 z-0" />
+  <img src="IMG/Background 1.jpg" alt="Background Images" class="w-full h-full object-cover absolute inset-0 z-0"/>
 
   <!-- Overlay -->
   <div class="relative z-10 flex justify-center min-h-screen px-12 py-12 bg-black/50 backdrop-blur-none">
     <div class="max-w-3xl text-white text-justify font-light space-y-6 pt-10">
-      <h1 class="text-4xl md:text-6xl font-normal">Who we are</h1>
+      <h1 class="text-4xl font-normal pt-2">Who we are</h1>
       <p>
         Our journey started in when when, exactly before the world had been flipped upside down. We are a small but passionate team focused on capturing the most meaningful moments of your life. From portraits speaking about personalities to wedding photos telling about the beginning of their new life, families bound with love in photo shoots, and couples whose every picture tells a story. Our motto, <strong class="font-extrabold">"We do everything with love"</strong> is not just a phrase, but it's the core of heart behind everything. We are committed to this in every session, every interaction, and every created image.
       </p>
@@ -102,7 +123,7 @@
       |
       <p class="text-gray-500 hover:text-black mx-4 inline-block duration-300">Wisnu</p>
     </h2>
-    <p class="mb-8">
+    <p class="mb-8 text-justify">
       Don't be fooled by the cool and collected look on his face, because beneath all that exterior, lies a deeply passionate guy who is just bursting with ideas. Robb has the eye of an eagle. He is able to capture the right moments in every events that he shoots for and he possesses the magic hands to put together different shots into a meaningful story. In addition to all that talent, Robb is a great guy. He is a really friendly dude and a superb friend. We believe that you will fall in love with him as easily as we had.
       </p>
   </div>
@@ -128,15 +149,17 @@
       |
       <p class="text-gray-500 hover:text-black mx-4 inline-block duration-300">Dwiki</p>
     </h2>
-    <p class="mb-4">
-      "Techniques can always be learned but the soul of a photo undeniably belongs to the photographer." This is the quote that Dwiki always carries in his mind every time he clicks on his camera. The result is a strong connection between moments, emotions and memories in his photographs.
-    </p>
-    <p class="mb-4">
-      Dwiki is rather a shy guy that gets funnier once things warm up. His slapstick kind of jokes brings smiles and laughter home, all day long. He loves the afternoon cuddle-time with his little family the most, then quickly grab any camera in reach when the sun somehow cast a wacky pattern on the wall. He likes to keep his photos simple & soothing, bold & strong, captivating & sometimes bizarre.
-    </p>
-    <p class="mb-4">
-      Dwiki digs in the chemistry of two lovebirds looking at each other, the sincere smiles when words of love are whispered, or simply the gentle breeze that passes between kisses. Adi loves the art of photography so much that working day feels like holiday to him!.”
-    </p>
+    <div class="text-justify">
+      <p class="mb-4">
+        "Techniques can always be learned but the soul of a photo undeniably belongs to the photographer." This is the quote that Dwiki always carries in his mind every time he clicks on his camera. The result is a strong connection between moments, emotions and memories in his photographs.
+      </p>
+      <p class="mb-4">
+        Dwiki is rather a shy guy that gets funnier once things warm up. His slapstick kind of jokes brings smiles and laughter home, all day long. He loves the afternoon cuddle-time with his little family the most, then quickly grab any camera in reach when the sun somehow cast a wacky pattern on the wall. He likes to keep his photos simple & soothing, bold & strong, captivating & sometimes bizarre.
+      </p>
+      <p class="mb-4">
+        Dwiki digs in the chemistry of two lovebirds looking at each other, the sincere smiles when words of love are whispered, or simply the gentle breeze that passes between kisses. Adi loves the art of photography so much that working day feels like holiday to him!.”
+      </p>
+    </div>
   </div>
 </div>
 <!--Main End-->

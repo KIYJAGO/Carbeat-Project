@@ -24,20 +24,39 @@
 <!--Navbar End-->
 
 <!--Side Menu Begin-->
-<div class="side-menu" id="sideMenu">
+<div class="side-menu fixed" id="sideMenu">
   <div class="top">
-    <div class="nav-logo" id="sideBarLogo">
-      <button class="btn-close font-bold cursor-pointer">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <div>
+      <button class="btn-close font-bold cursor-pointer mb-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5.5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </svg>        
       </button>
     </div>
-      <a href="Photography.html">Photography</a>
-      <a href="Videography.html">Videography</a>
-      <a href="About.html">About</a>
-      <a href="Service.html">Service</a>
-      <a href="FAQ.html">FAQ</a>
+    <a href="Photography.html" class="relative group">
+      <span class="pb-1">Photography</span>
+      <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+    </a>    
+    <a href="Videography.html" class="relative group">
+      <span class="pb-1">Videography</span>
+      <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+    </a>
+      <a href="About.html" class="relative group">
+        <span class="pb-1">About</span>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+      </a>
+      <a href="Service.html" class="relative group">
+        <span>Service</span>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+      </a>
+      <a href="FAQ.html" class="relative group">
+        <span>FAQ</span>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+      </a>
+      <a href="Gear.html" class="relative group">
+        <span>Gears</span>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+      </a>
   </div>
   <div class="bottom">
     <div class="contact-item">
@@ -56,6 +75,8 @@
     <div class="powered-photo font-poppins">&copy; Powered by KIYJAGO | Photos by KIYJAGO | Terms of Service | Privacy Policy</div>
   </div>
 </div>
+
+<div id="overlay" class="overlay fixed h-screen w-screen inset-0 bg-black/45 hidden z-101"></div>
 <!--Side Menu End-->
 
 <!--Hero Section-->
@@ -64,13 +85,13 @@
 
   <div class="relative z-20 mr-10 flex items-center  justify-start min-h-screen px-4">
     <div class="text-start max-w-3xl text-white">
-      <h1 class="text-4xl font-bold pt-12 mb-4">Carbeat Pictures</h1>
-      <p class="text-lg mb-2">
+      <h1 class="text-4xl font-bold pt-12 mb-6 font-poppins">Carbeat Pictures</h1>
+      <p class="text-lg mb-1">
         "We bring your memories to life through timeless visuals capturing emotions, not just frames. <br> From personal moments to grand events, every shot is a story worth telling."
       </p>
       <p class="text-lg mb-6">#DoEverythingWithLove</p>
         <a href="Service.html">
-          <button class="hover:bg-black hover:text-white bg-white text-black font-semibold px-6 py-2 border-2 border-white rounded-lg shadow-md transition duration-300 cursor-pointer">
+          <button class="hover:bg-black hover:text-white bg-white text-black font-semibold px-4 py-2 border-2 border-white rounded-lg shadow-md transition duration-300 cursor-pointer font-poppins text-sm ">
             Book Now
           </button>
         </a>
@@ -84,7 +105,7 @@
 <!--Main Content Begin-->
 <div id="firstContent">
   <div class="mb-16">
-    <h2 class="font-extrabold text-4xl text-black pt-12 text-center">Carbeat - Pictures</h2>
+    <h2 class="font-bold text-4xl text-black pt-12 text-center font-poppins">Carbeat - Pictures</h2>
     <p class="pt-5 mx-auto text-black w-[50%] text-center">Carbeat Pictures offers two main services focused on visual storytelling: photography and videography. Each service is designed to capture moments with aesthetic precision, professionalism, and meaning. From personal milestones to commercial needs, we are committed to delivering high-quality visual content that resonates with emotion, purpose, and creative excellence.</p>
   </div>
 
@@ -158,25 +179,23 @@
           More
         </button>
       </a>
-      <hr class="border-dashed border-gray-700 w-full max-w-[250px] sm:max-w-[435px] mb-5">
+      <hr class="border-dashed border-gray-700 w-full max-w-[250px] sm:max-w-[435px] mb-8">
     </div>
   </section>
   
-  <div id="parallax">
-    <video muted loop controls class="w-full h-full object-cover cursor-pointer">
-      <source src="IMG/Vid 1.mp4" type="video/mp4">
-    </video>
+  <div class="w-full max-w-8xl aspect-video">
+  <iframe class="w-full h-full" src="https://www.youtube.com/embed/CGoxTMkNbmQ?si=9QInEiXA5QwR_CrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
   
   <section class="bg-white py-2 px-48 max-w-4xl mx-auto z-10">
     <div class="opacity-0 translate-y-10 transition-all duration-700 ease-out reveal">
       <p class="text-[11px] text-gray-500 uppercase font-poppins tracking-widest mb-6">JUL 25, 2025</p>
-      <h2 class="text-3xl font-semibold mb-6">The Land of a Thousand Temples</h2>
+      <h2 class="text-3xl font-semibold mb-6">Cinematic Wedding Video</h2>
       <p class="text-gray-600 text-base text-justify leading-relaxed mb-6">
-        Known as The Land of a Thousand Temples, Bali is a place where spirituality meets breathtaking landscapes
+        A cinematic celebration of Putri & Faza's love, blending heartfelt moments with elegant visuals at Intercontinental Pondok Indah.
       </p>
       <p class="text-gray-600 text-base text-justify leading-relaxed mb-8">
-        With thousands of temples across the island, each one tells a story of devotion, balance, and living tradition.
+        Set against a backdrop of luxury and romance, every frame captures the timeless beauty of Putri & Faza's wedding day.
       </p>
       <a href="Content-Vid.html">
         <button class="border border-black text-xs px-4 py-1 mb-6 uppercase font-poppins hover:bg-black hover:text-white cursor-pointer rounded-sm">

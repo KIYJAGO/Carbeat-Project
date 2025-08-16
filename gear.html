@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="src/output.css">
   <link rel="icon" href="IMG/Logo/Carbeat Vector Logo Black.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
@@ -25,20 +24,39 @@
 <!-- Navbar End -->
 
 <!--Side Menu Begin-->
-<div class="side-menu" id="sideMenu">
+<div class="side-menu fixed" id="sideMenu">
   <div class="top">
-    <div class="nav-logo" id="sideBarLogo">
-      <button class="btn-close font-bold cursor-pointer">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <div>
+      <button class="btn-close font-bold cursor-pointer mb-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5.5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </svg>        
       </button>
     </div>
-      <a href="Photography.html">Photography</a>
-      <a href="Videography.html">Videography</a>
-      <a href="About.html">About</a>
-      <a href="Service.html">Service</a>
-      <a href="FAQ.html">FAQ</a>
+    <a href="Photography.html" class="relative group">
+      <span class="pb-1">Photography</span>
+      <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+    </a>    
+    <a href="Videography.html" class="relative group">
+      <span class="pb-1">Videography</span>
+      <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+    </a>
+      <a href="About.html" class="relative group">
+        <span class="pb-1">About</span>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+      </a>
+      <a href="Service.html" class="relative group">
+        <span>Service</span>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+      </a>
+      <a href="FAQ.html" class="relative group">
+        <span>FAQ</span>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+      </a>
+      <a href="Gear.html" class="relative group">
+        <span>Gears</span>
+        <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-700 group-hover:w-full"></span>
+      </a>
   </div>
   <div class="bottom">
     <div class="contact-item">
@@ -57,24 +75,30 @@
     <div class="powered-photo font-poppins">&copy; Powered by KIYJAGO | Photos by KIYJAGO | Terms of Service | Privacy Policy</div>
   </div>
 </div>
+
+<div id="overlay" class="overlay fixed h-screen w-screen inset-0 bg-black/45 hidden z-101"></div>
 <!--Side Menu End-->
 
 <!--Main Begin-->
 <div class="relative w-full min-h-screen pt-17">
   <!-- Background -->
-  <img src="IMG/Background 11.jpg" alt="Background Images" class="w-full h-full object-cover absolute inset-0 z-0" />
+  <img src="IMG/Background 11.jpg" alt="Background Images" class="w-full h-full object-cover absolute inset-0 z-0"/>
 
   <!-- Overlay -->
   <div class="relative z-10 flex justify-center min-h-screen px-12 py-12 bg-black/50 backdrop-blur-none">
-    <div class="max-w-3xl text-white text-justify font-light space-y-6 pt-10">
-      <h1 class="text-4xl md:text-6xl font-normal">Our Gear</h1>
-      <p>
-        Every great shot begins with the right tools — and we’ve carefully chosen each piece of gear to bring your moments to life. From high-resolution cameras to versatile lenses and reliable lighting, every item in our kit is selected for its ability to capture detail, color, and emotion with precision.      </p>
-      <p>
-        We believe that equipment is more than just technology; it’s a trusted partner in storytelling. That’s why we work with industry-leading tools like the Sony A7III for cinematic videography and the Sony A7R for breathtaking photography. Each has its own strengths, allowing us to adapt to any style — whether it’s a warm, romantic wedding or a bold, modern portrait session.      </p>
-      <p>
-        Just like every person has a unique story, every piece of our gear plays a unique role in telling it. In our hands, these tools aren’t just cameras and lenses — they’re the bridge between your memories and timeless images
-      </p>
+    <div class="max-w-3xl text-white text-justify font-light space-y-6 pt-25">
+      <h1 class="text-4xl font-bold">Our Gear</h1>
+      <div class="text-justify">
+        <p class="mb-6">
+          Every great shot begins with the right tools and we've carefully chosen each piece of gear to bring your moments to life. From high-resolution cameras to versatile lenses and reliable lighting, every item in our kit is selected for its ability to capture detail, color, and emotion with precision.      
+        </p>
+        <p class="mb-6">
+          We believe that equipment is more than just technology; it's a trusted partner in storytelling. That's why we work with industry-leading tools like the Sony A7III for cinematic videography and the Sony A7R for breathtaking photography. Each has its own strengths, allowing us to adapt to any style whether it's a warm, romantic wedding or a bold, modern portrait session.
+        </p>
+        <p class="mb-6">
+          Just like every person has a unique story, every piece of our gear plays a unique role in telling it. In our hands, these tools aren't just cameras and lenses they're the bridge between your memories and timeless images
+        </p>
+      </div>
     </div>
   </div>
 </div>
@@ -84,94 +108,76 @@
 <!--Card-->
 <div class="grid grid-cols-1 lg:grid-cols-2">
   <!--Left Picture-->
-  <div>
+<div>
   <div class="w-full h-full">
-  <iframe 
-    title="Sony A7" 
-    src="https://sketchfab.com/models/257d4f000e664da880d70d3bcdce1c8c/embed?autospin=1&autostart=1&camera=0&transparent=1" 
-    frameborder="0" 
-    allowfullscreen 
-    mozallowfullscreen="true" 
-    webkitallowfullscreen="true" 
-    allow="autoplay; fullscreen; xr-spatial-tracking"
-    class="w-full h-full object-cover">
-  </iframe>
+    <iframe 
+      title="Sony A7" src="https://sketchfab.com/models/257d4f000e664da880d70d3bcdce1c8c/embed?autospin=1&autostart=1&camera=0&transparent=1" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" class="w-full h-full object-cover">
+    </iframe>
+  </div>
 </div>
-</div>
-
 
   <!--Right Text-->
   <div class="relative bg-white p-12 text-sm leading-relaxed flex flex-col justify-center">
     <!--Mark-->
     <div class="hidden lg:block absolute left-0 top-1/4 w-4 h-4 bg-white rotate-45 -translate-x-1/2 -translate-y-1/2 z-10"></div>
-  <h2 class="text-sm uppercase tracking-widest font-medium mb-4">
-      <i class="fa-solid fa-video"></i>
-      <p class="text-gray-500 hover:text-black mx-4 inline-block duration-300">Photography</p>
-      |
-      <p class="text-gray-500 hover:text-black mx-4 inline-block duration-300">Sony A7R</p>
+    <h2 class="text-sm uppercase tracking-widest font-medium mb-4">
+      <i class="fa-solid fa-camera"></i>
+        <p class="text-gray-500 hover:text-black mx-4 inline-block duration-300">Photography</p>
+        |
+        <p class="text-gray-500 hover:text-black mx-4 inline-block duration-300">Sony A7R</p>
     </h2>
     <p class="mb-4">
-Lightweight and detail-driven — the Sony A7R is our choice for high-resolution, nuanced still imagery.
-
+    Lightweight and detail-driven the Sony A7R is our choice for high-resolution, nuanced still imagery.
+    </p>
     <ul class="list-disc pl-5 space-y-1 mb-4">
       <li>Equipped with a 36.4 MP full-frame CMOS sensor without an optical low-pass filter, delivering incredibly sharp imagery and exceptional detail</li>
       <li>Weighing just 465 g (with batteries), making it highly portable and perfect for on-location shoots</li>
-      <li>Despite lacking IBIS, its compact size and ergonomic design make handheld captures stable and comfortable — even during long sessions</li>
+      <li>Despite lacking IBIS, its compact size and ergonomic design make handheld captures stable and comfortable even during long sessions</li>
     </ul>
 
-    <p class="mb-4">Every frame—from portraits to landscapes—becomes a textured memory, thanks to the sheer resolution and clarity this camera brings.</p>
+    <p class="mb-4">Every frame from portraits to landscapes becomes a textured memory, thanks to the sheer resolution and clarity this camera brings.</p>
   </div>
 </div>
 
 <!--Card 2-->
 <div class="grid grid-cols-1 lg:grid-cols-2">
   <!--Right Picture-->
-  <div class="block w-full h-full order-1 lg:order-2">
-  
+<div class="block w-full h-full order-1 lg:order-2">
   <div class="w-full h-full">
     <iframe 
-      title="Sony A7iii" 
-      src="https://sketchfab.com/models/8a7dc5f6ee384d1a9975000992c29b01/embed?autospin=1&autostart=1&camera=0&transparent=1" 
-      frameborder="0" 
-      allowfullscreen 
-      mozallowfullscreen="true" 
-      webkitallowfullscreen="true" 
-      allow="autoplay; fullscreen; xr-spatial-tracking" 
-      class="height-guide-0 w-full h-full object-cover">
+      title="Sony A7iii" src="https://sketchfab.com/models/8a7dc5f6ee384d1a9975000992c29b01/embed?autospin=1&autostart=1&camera=0&transparent=1" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" class="height-guide-0 w-full h-full object-cover">
     </iframe>
   </div>
 </div>
-
 
   <!--Left Text-->
   <div class="relative bg-white p-12 text-sm leading-relaxed flex flex-col justify-center order-2 lg:order-1">
     <!--Mark-->
     <div class="hidden lg:block absolute right-0 top-1/6 w-4 h-4 bg-white rotate-45 translate-x-1/2 -translate-y-1/2 z-10"></div>
       <h2 class="text-sm uppercase tracking-widest font-medium mb-4">
-        <i class="fa-solid fa-camera"></i>
+        <i class="fa-solid fa-video"></i>
         <p class="text-gray-500 hover:text-black mx-4 inline-block duration-300">Videography</p>
         |
         <p class="text-gray-500 hover:text-black mx-4 inline-block duration-300">Sony A7iii</p>
       </h2>
-    <p class="mb-4">Compact yet powerful — the Sony A7III is our workhorse for cinematic video storytelling.</p>
+    <p class="mb-4">Compact yet powerful the Sony A7III is our workhorse for cinematic video storytelling.</p>
       <ul class="list-disc pl-5 mb-4">
         <li>4K recording up to 30 fps for crisp, cinematic quality</li>
         <li>Full HD 120 fps for smooth slow-motion</li>
         <li>5-axis in-body image stabilization (IBIS)</li>
         <li>Weather-sealed magnesium alloy body</li>
       </ul>
-    <p class="mb-8">It’s the perfect blend of performance and reliability — allowing us to capture cinematic-quality video while staying agile on the move.</p>
+    <p class="mb-8">It's the perfect blend of performance and reliability allowing us to capture cinematic-quality video while staying agile on the move.</p>
   </div>
 </div>
 
-<div class="text-center mt-5">
-  <p class="text-lg italic">
-    We offer a wide range of lens options tailored to match each client’s specific needs, from wide landscapes to intimate portraits and cinematic close ups. 
+<div class="text-center mt-12">
+  <p class="text-sm font-light italic font-poppins">
+    We offer a wide range of lens options tailored to match each client's specific needs, from wide landscapes to intimate portraits and cinematic close ups. 
     <br>
-    <p class="font-bold">#DoEverythingWithLove</p>
+    <p class="font-bold font-sm mt-2">#DoEverythingWithLove</p>
   </p>
 </div>
-
 <!--Main End-->
 
 <!--Footer Begin-->
